@@ -1,0 +1,10 @@
+@import '../../styles/settings.scss';
+
+.cardForm {
+    align-items: center;
+
+    & * {
+        padding: 10px;
+    }
+    
+}
