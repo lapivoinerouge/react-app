@@ -1,0 +1,43 @@
+@use "sass:math";
+@import '../../styles/settings.scss';
+
+.navbar {
+    background: $color-darker;
+    font-size: ($base-size * 2);
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: ($base-size * 2);
+    }
+}
+
+.logoWrapper {
+    align-items: center;
+}
+
+.navlinks {
+    display: flex;
+    flex-direction: row;
+    column-gap: ($base-size * 2);
+
+    li {
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-light;
+    }
+}
+
+.icon::before {
+    padding-right: $base-size;
+    color: $color-light;
+    font-size: ($base-size * 2);
+    vertical-align: middle;
+    position: relative;
+    top: - math.div($base-size, 3);
+  }
+
