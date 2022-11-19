@@ -4,7 +4,7 @@
 .navbar {
     background: $color-darker;
     font-size: ($base-size * 2);
-
+    
     div {
         display: flex;
         flex-direction: row;
@@ -28,7 +28,6 @@
 
     a {
         text-decoration: none;
-        color: $color-light;
     }
 }
 
@@ -39,5 +38,12 @@
     vertical-align: middle;
     position: relative;
     top: - math.div($base-size, 3);
-  }
+}
 
+.link {
+    color: $color-light;
+}   
+
+.linkActive {
+    color: $color-warning;
+}
