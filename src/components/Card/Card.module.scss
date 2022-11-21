@@ -1,4 +1,5 @@
 @import '../../styles/settings.scss';
+@import '../Button/Button.module.scss';
 
 .card {
     position: relative;
@@ -10,4 +11,8 @@
     display: flex;
     justify-content: space-between;
     font-weight: bold;
+}
+
+.isFavorite {
+    color: $color-favorite;
 }
