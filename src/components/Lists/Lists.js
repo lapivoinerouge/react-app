@@ -1,11 +1,11 @@
 import { useSelector } from "react-redux";
 import styles from './Lists.module.scss';
-import { getAllLists } from "../../redux/store";
+import { getAllLists } from "../../redux/listsRedux";
 import { Link } from 'react-router-dom';
 import ListForm from "../ListForm/ListForm";
 
 const Lists = () => {
-  const lists = useSelector(getAllLists);
+  const lists = useSelector(state => getAllLists(state));
 
   return (
     <section className={styles.lists}>
